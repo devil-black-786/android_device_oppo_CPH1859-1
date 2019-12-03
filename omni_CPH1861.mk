@@ -17,7 +17,7 @@
 #
 
 # Release name
-PRODUCT_RELEASE_NAME := CPH1859
+PRODUCT_RELEASE_NAME := CPH1861
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
@@ -28,10 +28,10 @@ $(call inherit-product, vendor/omni/config/common.mk)
 
 # Device identifier.
 PRODUCT_BRAND := OPPO
-PRODUCT_DEVICE := CPH1859
+PRODUCT_DEVICE := CPH1861
 PRODUCT_MANUFACTURER := OPPO
-PRODUCT_MODEL := CPH1859
-PRODUCT_NAME := omni_CPH1859
+PRODUCT_MODEL := CPH1861
+PRODUCT_NAME := omni_CPH1861
 
 # Override some system properties
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
