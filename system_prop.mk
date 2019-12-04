@@ -23,3 +23,8 @@ ro.product.name=CPH1861
 ro.product.device=CPH1861
 ro.build.product=CPH1861
 ro.treble.enabled=true
+sys.usb.controller=musb-hdrc
+sys.usb.ffs.aio_compat=true
+ro.sys.usb.storage.type=mtp
+sys.usb.config-mtp,adb
+sys.usb.state=mtp,adb
