@@ -105,7 +105,6 @@ RECOVERY_GRAPHICS_USE_LINELENGTH := true
 TARGET_RECOVERY_LCD_BACKLIGHT_PATH := \"/sys/class/leds/lcd-backlight/brightness\"
 TARGET_DISABLE_TRIPLE_BUFFERING := false #This is related to OpenGL Performance. Do I need this?
 RECOVERY_SDCARD_ON_DATA := true
-TW_THEME := portrait_hdpi
 
 # Display
 
@@ -124,6 +123,7 @@ TARGET_COPY_OUT_VENDOR := vendor
 # TWRP Related
 
 TW_INPUT_BLACKLIST := "hbtp_vm"
+TW_THEME := portrait_hdpi
 TW_DEVICE_VERSION := $(shell date -u +" %F")
 TW_MAX_BRIGHTNESS := 456
 TW_DEFAULT_BRIGHTNESS := 365
@@ -142,6 +142,13 @@ TW_DEFAULT_LANGUAGE := en
 
 PLATFORM_SECURITY_PATCH := 2019-10-05
 BOARD_OS_VERSION := 9.0.0
+
+# Encryption
+
+TW_CRYPTO_FS_TYPE := "ext4"
+TW_CRYPTO_REAL_BLKDEV := "/dev/block/platform/bootdevice/by-name/userdata"
+TW_CRYPTO_MNT_POINT := "/data"
+TW_CRYPTO_FS_OPTIONS := "nosuid,nodev,noatime,discard,noauto_da_alloc,data=ordered"
 
 # Debug
 
