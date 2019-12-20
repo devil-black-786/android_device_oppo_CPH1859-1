@@ -29,8 +29,6 @@ on init
 
 on fs
     write /sys/devices/platform/odm/odm:oppo_charger/power_supply/usb/otg_switch 1
-    write /sys/class/android_usb/android0/idProduct 0x2765
-    write /sys/class/android_usb/android0/idVendor 0x22d9
     export ANDROID_ROOT /system_root
 
 on post-fs-data
