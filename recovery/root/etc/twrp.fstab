@@ -7,6 +7,7 @@
 /data		    ext4	/dev/block/platform/bootdevice/by-name/userdata         flags=encryptable=/dev/block/platform/bootdevice/by-name/metadata
 /vendor             ext4        /dev/block/platform/bootdevice/by-name/vendor		flags=display="Vendor";wipeingui;backup=1
 /vendor_image	    emmc	/dev/block/by-name/vendor				flags=backup=1;flashimg=1
+/persistent	    emmc	/dev/block/platform/bootdevice/by-name/frp
 /logo		    emmc	/dev/block/platform/bootdevice/by-name/logo             flags=display="Logo"
 /misc		    emmc	/dev/block/platform/bootdevice/by-name/misc
 /metadata           emmc        /dev/block/platform/bootdevice/by-name/metadata
