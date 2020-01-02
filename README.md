@@ -1,7 +1,7 @@
 TWRP Device Tree for Realme 1
 ===========================================
 
-The Realme 1 (codenamed _"CPH1861"_) is a mid-range smartphone from Realme, announced in May 2018.	
+The Realme 1 (codenames _"CPH1861"_ and _"CPH1859"_) is a mid-range smartphone from Realme, announced in May 2018.	
  
 ## Device specifications
 
