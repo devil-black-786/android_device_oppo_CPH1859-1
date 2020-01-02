@@ -20,7 +20,7 @@
 
 LOCAL_PATH := device/oppo/CPH1859
 
-#system-as-root
+# system-as-root (SAR) and OTA Assert
 
 BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
 TARGET_OTA_ASSERT_DEVICE := CPH1859
@@ -65,6 +65,9 @@ TARGET_PREBUILT_KERNEL := $(LOCAL_PATH)/prebuilt/zImage
 
 BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x00008000 --ramdisk_offset 0x14f88000 --tags_offset 0x13f88000 --header_version 1
 
+ENABLE_CPUSETS := true
+ENABLE_SCHEDBOOST := true
+
 # Platform
 
 TARGET_BOARD_PLATFORM := mt6771
@@ -103,7 +106,7 @@ BOARD_SUPPRESS_SECURE_ERASE := true
 BOARD_USE_FRAMEBUFFER_ALPHA_CHANNEL := true
 RECOVERY_GRAPHICS_USE_LINELENGTH := true
 TARGET_RECOVERY_LCD_BACKLIGHT_PATH := \"/sys/class/leds/lcd-backlight/brightness\"
-TARGET_DISABLE_TRIPLE_BUFFERING := false #This is related to OpenGL Performance. Do I need this?
+TARGET_DISABLE_TRIPLE_BUFFERING := false
 RECOVERY_SDCARD_ON_DATA := true
 
 # Display
@@ -131,6 +134,7 @@ TW_BRIGHTNESS_PATH := /sys/class/leds/lcd-backlight/brightness
 TW_CUSTOM_CPU_TEMP_PATH := /sys/devices/virtual/thermal/thermal_zone1/temp
 TW_USE_TOOLBOX := true
 TW_NO_SCREEN_BLANK := true
+TW_SCREEN_BLANK_ON_BOOT := false
 TW_NO_BATT_PERCENT := false
 TW_EXCLUDE_TWRPAPP := true
 TW_EXCLUDE_SUPERSU := true
@@ -138,11 +142,12 @@ TW_EXTRA_LANGUAGES := true
 TW_DEFAULT_LANGUAGE := en
 TW_OZIP_DECRYPT_KEY := "172B3E14E46F3CE13E2B5121CBDC4321"
 
-#OS
+# OS
 
 PLATFORM_SECURITY_PATCH := 2019-12-05
 BOARD_OS_VERSION := 9.0.0
 TW_INCLUDE_CRYPTO := true
+TW_INCLUDE_FBE := true
 TW_CRYPTO_FS_TYPE := "ext4"
 TW_CRYPTO_REAL_BLKDEV := "/dev/block/platform/bootdevice/by-name/userdata"
 TW_CRYPTO_MNT_POINT := "/data"
