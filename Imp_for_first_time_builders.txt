@@ -32,12 +32,12 @@ Now perform
 
 repo sync -j(nproc --all) -c
 
-All the sources along with your TWRP device tree and kernel source (if available) will; be downloaded.
+All the sources along with your TWRP device tree and kernel source (if available) will be downloaded.
 
 
 B. Instructions (After repo sync):
 
-After repo sync you have to tell buildbot to include your device for building TWRP. So for this you can either make a vendorsetup.sh file in your device tree or can edit the available file in TWRP source.
+After repo sync you have to tell buildbot to include your device for building TWRP. So for this you can either make a vendorsetup.sh file in your device tree or can edit an available file in TWRP source.
 
 To edit vendorsetup.sh file in the downloaded TWRP source. Head to the below location.
 
