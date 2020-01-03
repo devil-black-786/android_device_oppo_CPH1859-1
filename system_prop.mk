@@ -27,7 +27,13 @@ ro.treble.enabled=true
 persist.sys.usb.config=mtp,adb
 persist.service.adb.enable=1
 persist.service.debuggable=1
-ro.secure=1
+ro.secure=0
 ro.adb.secure=0
 ro.debuggable=1
 ro.allow.mock.location=1
+sys.usb.controller=musb-hdrc
+ro.sys.usb.storage.type=mtp
+sys.usb.ffs.aio_compat=1
+sys.usb.ffs.ready=1
+sys.usb.state=mtp,adb
+

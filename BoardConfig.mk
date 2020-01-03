@@ -132,6 +132,7 @@ TW_MAX_BRIGHTNESS := 456
 TW_DEFAULT_BRIGHTNESS := 365
 TW_BRIGHTNESS_PATH := /sys/class/leds/lcd-backlight/brightness
 TW_CUSTOM_CPU_TEMP_PATH := /sys/devices/virtual/thermal/thermal_zone1/temp
+TW_INCLUDE_FB2PNG := true
 TW_USE_TOOLBOX := true
 TW_NO_SCREEN_BLANK := true
 TW_SCREEN_BLANK_ON_BOOT := false
