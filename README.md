@@ -51,7 +51,7 @@ If you are a first time builder then do check Imp_for_first_time_builders.md fil
 
     repo sync -j(nproc) -c
 
-## To Build or Compilation##
+## To Build or Compilation
 ---------------
 
 Build the TWRP recovery using below command.
