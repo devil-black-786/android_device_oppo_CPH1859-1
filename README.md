@@ -45,12 +45,12 @@ To initialize a shallow clone, which will save even more space, use a command li
 
 # repo sync
 
-If you are a first time builder then do check Imp_for_first_time_builders.txt file.
+If you are a first time builder then do check Imp_for_first_time_builders.md file.
  Then to sync up:
 
     repo sync -j(nproc) -c
 
-## To Build ##
+## To Build or Compilation
 ---------------
 
 Build the TWRP recovery using below command.
