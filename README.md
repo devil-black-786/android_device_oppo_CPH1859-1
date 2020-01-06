@@ -1,7 +1,7 @@
 TWRP Device Tree for Realme 1
 ===========================================
 
-The Realme 1 (codenamed _"CPH1859"_) is a mid-range smartphone from Realme, announced in May 2018.	
+The Realme 1 (codenames _"CPH1859"_ and _"CPH1861"_) is a mid-range smartphone from Realme, announced in May 2018.	
  
 ## Device specifications
 
@@ -46,12 +46,12 @@ To initialize a shallow clone, which will save even more space, use a command li
 
 # repo sync
 
-If you are a first time builder then do check Imp_for_first_time_builders.txt file.
+If you are a first time builder then do check Imp_for_first_time_builders.md file.
  Then to sync up:
 
     repo sync -j(nproc) -c
 
-## To Build ##
+## To Build or Compilation##
 ---------------
 
 Build the TWRP recovery using below command.
