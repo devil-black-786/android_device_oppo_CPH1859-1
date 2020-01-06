@@ -35,7 +35,7 @@ Kernel source is available but it has lot of issues, so used prebuilt kernel.
 
 Now perform 
 
-```repo sync -j(nproc --all) -c```
+    repo sync -j(nproc --all) -c
 
 All the sources along with your TWRP device tree and kernel (if available) will be downloaded.
 
