@@ -53,7 +53,7 @@ To edit vendorsetup.sh file in the downloaded source. Head to the below location
 
 Now add below line at the end.
 
-  add_lunch_combo omni_CPH1859-eng
+    add_lunch_combo omni_CPH1859-eng
 
 3. Save file and exit.
 
