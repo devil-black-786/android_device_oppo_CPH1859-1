@@ -1,8 +1,27 @@
 TWRP Device Tree for Realme 1
 ===========================================
 
-The Realme 1 (codenames _"CPH1859"_ and _"CPH1861"_) is a mid-range smartphone from Realme, announced in May 2018.	
- 
+The Realme 1 (codenamed _"CPH1859"_) is a mid-range smartphone from Realme, announced in May 2018.
+
+## Status
+
+**Working**:
+
+1. MTP
+2. Backup and Restore
+3. Flash Stock ROM
+4. Flash GSI or Custom ROMs
+5. Screenshots now renders correct color
+6. OTG Works
+
+**Not working**:
+
+2. Decryption
+
+## Downloads
+
+https://github.com/buddi56/android_device_oppo_CPH1859/releases
+
 ## Device specifications
 
 Basic   | Spec Sheet
@@ -46,14 +65,18 @@ To initialize a shallow clone, which will save even more space, use a command li
 
 # repo sync
 
-If you are a first time builder then do check Imp_for_first_time_builders.md file.
+If you are a first time builder then do check Imp_for_first_time_builders.txt file.
  Then to sync up:
 
     repo sync -j(nproc) -c
 
-## To Build or Compilation
+## To Build ##
 ---------------
 
 Build the TWRP recovery using below command.
 
     cd <source-dir>; export ALLOW_MISSING_DEPENDENCIES=true; . build/envsetup.sh; lunch omni_CPH1859-eng; mka recoveryimage
+
+## NOTE
+
+Most of the work here is from internet. Thanks to all the members involved in TWRP project, example DTs and testers.
