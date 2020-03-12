@@ -1,7 +1,7 @@
 #
-# Copyright 2019 The Android Open Source Project
-# Copyright (C) 2019 The LineageOS Project
-# Copyright (C) 2013-2019 OmniROM
+# Copyright 2020 The Android Open Source Project
+# Copyright (C) 2020 The LineageOS Project
+# Copyright (C) 2013-2020 OmniROM
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.

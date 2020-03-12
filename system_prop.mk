@@ -1,7 +1,7 @@
 #
-# Copyright 2019 The Android Open Source Project
-# Copyright (C) 2019 The LineageOS Project
-# Copyright (C) 2013-2019 OmniROM
+# Copyright 2020 The Android Open Source Project
+# Copyright (C) 2020 The LineageOS Project
+# Copyright (C) 2013-2020 OmniROM
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -22,12 +22,7 @@ ro.product.brand=OPPO
 ro.product.name=CPH1861
 ro.product.device=CPH1861
 ro.build.product=CPH1861
-sys.usb.configfs=1
-ro.treble.enabled=true
-persist.sys.usb.config=mtp,adb
-persist.service.adb.enable=1
-persist.service.debuggable=1
-ro.secure=1
+ro.secure=0
 ro.adb.secure=0
-ro.debuggable=1
-ro.allow.mock.location=1
+ro.treble.enabled=true
+
